@@ -27,7 +27,7 @@
                             </div>
                             <div class=" justify-content-center  flex-column d-none" data-num='2'>
                                     <h1 class="WeAreAwes">We Are Awesome Creative Agency 3</h1>
-                                    <p class="textHeader">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.</p>
+                                    <p class="textHeader">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.This is Photoshop's version  of Lorem Ipsum.</p>
                             </div>
                             <div class=" justify-content-center  flex-column d-none" data-num='3'>
                                     <h1 class="WeAreAwes">We Are Awesome Creative Agency 4</h1>
@@ -66,21 +66,22 @@
 <!-- our story -->
 <section class="container story">
        <div class="row mt-5 mb-5">
-           <div class="col-12 col-lg-4 d-flex justify-content-center"><img src="images/logotipe.webp" alt="logotipe"></div>
+           <div class="col-12 col-lg-4 d-none d-lg-flex justify-content-center"><div><img src="images/logotipe.webp" alt="logotipe"></div></div>
            <div class="col-12 col-lg-8">
                <h1>OUR STORY</h1>
                <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus</p>
                <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+               <div id='storyText' class="row m-close">
+                <div class="col">
+                        <p>The tale began in 1987 when PhD student Tom Knoll wrote a graphics application in a Macintosh Plus. The software was used to display gray scale images on a monochrome display. Knoll called it ‘Display.’ We could now consider Display as the unofficial father of our beloved Photoshop.</p>
+                        <p>Tom’s brother John, who works at Industrial Light and Magic, saw the program. Being a photo-enthusiast, John persuaded his brother to turn it into an image editing software. He eventually finished it after taking a six-month break from his studies. Tom tried to call it ImagePro (image, if this was pursued, we will all say, I ImagePro-ed my photo).</p>
+                        <p>Good thing was, the name was already taken for copyright so he opted to call it Photoshop (version 0.07). Tom eventually managed to sell it to a scanner manufacturer.</p>
+                </div>
+               </div>
                <p id="storyBtn" class="myBtn" data-targ="#storyText" data-text='LEARN LESS'>learn more</p>
            </div>
        </div>
-       <div id='storyText' class="row m-close">
-        <div class="col">
-                <p>The tale began in 1987 when PhD student Tom Knoll wrote a graphics application in a Macintosh Plus. The software was used to display gray scale images on a monochrome display. Knoll called it ‘Display.’ We could now consider Display as the unofficial father of our beloved Photoshop.</p>
-                <p>Tom’s brother John, who works at Industrial Light and Magic, saw the program. Being a photo-enthusiast, John persuaded his brother to turn it into an image editing software. He eventually finished it after taking a six-month break from his studies. Tom tried to call it ImagePro (image, if this was pursued, we will all say, I ImagePro-ed my photo).</p>
-                <p>Good thing was, the name was already taken for copyright so he opted to call it Photoshop (version 0.07). Tom eventually managed to sell it to a scanner manufacturer.</p>
-        </div>
-       </div>
+      
    
 </section>
 <!-- video -->
@@ -133,69 +134,74 @@
        </div>
    
 </section>
+<!-- team -->
 <section class="teamBg">
         <div class="filter">
                 <div class="container pt-5 pb-5">
                         <div class="row d-flex justify-content-center align-items-center flex-column">
-                                <p class="hed textColorWhite">MEET OUR AMAZING TEAM</p>
+                                <p class="hed text-center textColorWhite">MEET OUR AMAZING TEAM</p>
                                 <div class="sep textColorWhiteGray">Lorem ipsum dolor sit amet proin gravida nibh vel velit</div>
                             </div>
                             <div class="row d-flex justify-content-between pt-5 pb-5">
-                                    <div class="photo col-12 col-sm-6 col-lg-3">
-                                       <div> 
-                                           <img src="images/team/semf.jpg" alt="SEMF UCUK" class="img-fluid">
-                                         <div class="name">
-                                                <div>SEMF UCUK</div>
-                                                <span>CEO & FOUNDER</span>
+                                    <div class="d-flex flex-column justify-content-center align-items-center col-12 col-sm-6 col-lg-3">
+                                           <div>
+                                            <div class="photo"><img src="images/team/semf.jpg" alt="SEMF UCUK" class="img-fluid">
                                                 <div class="linked">
-                                                        <div ><a href="https://www.linkedin.com/"><img src="images/linkedin.png" alt="linkedIn"></a></div>
-                                                        <div ><a href="https://www.facebook.com/"><img src="images/facebook.png" alt="facebook"></a></div>
-                                                </div>
-                                         </div>
-                                        </div>
+                                                    <a href="https://www.linkedin.com/"><img src="images/linkedin.png" alt="linkedIn"></a>
+                                                   <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="facebook"></a>
+                                                   </div>
+                                            </div>
+                                             <div class="name">
+                                                    <div>SEMF UCUK</div>
+                                                    <span>CEO & FOUNDER</span>
+                                             </div>
+                                           </div>
                                     </div>
-                                    <div class="photo col-12 col-sm-6 col-lg-3">
+                                    <div class="d-flex flex-column justify-content-center align-items-center col-12 col-sm-6 col-lg-3">
+                                          <div>
+                                            <div class="photo"> <img src="images/team/dik.jpg" alt="DIK ADALIN" class="img-fluid">
+                                                <div class="linked">
+                                                    <a href="https://www.linkedin.com/"><img src="images/linkedin.png" alt="linkedIn"></a>
+                                                    <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="facebook"></a>
+                                                </div>
+                                            </div>
+                                            <div class="name">
+                                                    <div>DIK ADALIN</div>
+                                                    <span>ENGINEERING</span>
+                                            </div>
+                                          </div>
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center align-items-center col-12 col-sm-6 col-lg-3">
                                        <div>
-                                            <img src="images/team/dik.jpg" alt="DIK ADALIN" class="img-fluid">
-                                        <div class="name">
-                                                <div>DIK ADALIN</div>
-                                                <span>ENGINEERING</span>
+                                        <div class="photo"> <img src="images/team/jeng.jpg" alt="JENG KOL" class="img-fluid">
+                                            <div class="linked">
+                                                <a href="https://www.linkedin.com/"><img src="images/linkedin.png" alt="linkedIn"></a>
+                                                <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="facebook"></a>
+                                            </div>
+                                        </div>
+                                            <div class="name">
+                                                    <div>JENG KOL</div>
+                                                    <span>DESIGNER</span>
+                                            </div>
+                                       </div>   
+                                    </div>
+                                    <div class=" d-flex flex-column justify-content-center align-items-center col-12 col-sm-6 col-lg-3">
+                                        <div>
+                                            <div class="photo"><img src="images/team/pet.jpg" alt="PET ROMAK" class="img-fluid">
                                                 <div class="linked">
-                                                        <div ><a href="https://www.linkedin.com/"><img src="images/linkedin.png" alt="linkedIn"></a></div>
-                                                        <div ><a href="https://www.facebook.com/"><img src="images/facebook.png" alt="facebook"></a></div>
+                                                    <a href="https://www.linkedin.com/"><img src="images/linkedin.png" alt="linkedIn"></a>
+                                                    <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="facebook"></a>
                                                 </div>
+                                </div>
+                                        <div class="name ">
+                                                <div>PET ROMAK</div>
+                                                <span>MARKETING</span>
                                         </div>
-                                       </div> 
-                                    </div>
-                                    <div class="photo col-12 col-sm-6 col-lg-3">
-                                        <div>
-                                                <img src="images/team/jeng.jpg" alt="JENG KOL" class="img-fluid">
-                                                <div class="name">
-                                                        <div>JENG KOL</div>
-                                                        <span>DESIGNER</span>
-                                                        <div class="linked">
-                                                                <div ><a href="https://www.linkedin.com/"><img src="images/linkedin.png" alt="linkedIn"></a></div>
-                                                                <div ><a href="https://www.facebook.com/"><img src="images/facebook.png" alt="facebook"></a></div>
-                                                        </div>
-                                                </div>
-                                        </div>
-                                    </div>
-                                    <div class="photo col-12 col-sm-6 col-lg-3">
-                                        <div>
-                                                <img src="images/team/pet.jpg" alt="PET ROMAK" class="img-fluid">
-                                                <div class="name">
-                                                        <div>PET ROMAK</div>
-                                                        <span>MARKETING</span>
-                                                        <div class="linked ">
-                                                                <div ><a href="https://www.linkedin.com/"><img src="images/linkedin.png" alt="linkedIn"></a></div>
-                                                                <div ><a href="https://www.facebook.com/"><img src="images/facebook.png" alt="facebook"></a></div>
-                                                        </div>
-                                                </div>
                                         </div>
                                     </div>
                             </div>
                             <div class="row d-flex justify-content-center align-items-center flex-column ">
-                                <p class="textColorWhiteGray" style="opacity: 0.7;">Become part of our dream team, let’s join us ! </p>
+                                <p class="textColorWhiteGray text-center" style="opacity: 0.7;">Become part of our dream team, let’s join us ! </p>
                                 <p class="myBtn">WE ARE HIRING</p>
                             </div>
                 </div>

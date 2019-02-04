@@ -1,3 +1,4 @@
+html{scroll-behavior: smooth;}
 body{background: white;}
 .myBtn{
     display: inline-block;
@@ -14,6 +15,7 @@ body{background: white;}
     transform: scale(1.035);
 }
 .headerBg{
+    position: relative;
     display: inline-block;
     min-height: 100vh;
     background-image: url(../images/headerBG.webp);
@@ -104,7 +106,12 @@ img[alt='menu']{
     color: #00e0d0;
 }
 @media(max-width: 991.98px) { 
-    .bar>a{margin-left: 0; position: relative;} 
+    .bar>a{
+        margin-left: 0; 
+        position: relative;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    } 
     .bar>a::after{
         content: "";
         position: absolute;
@@ -129,10 +136,12 @@ img[alt='menu']{
 .m-open:not(#linkMenu){
     transition: max-height 2s ease-in-out;
     max-height: 920px;
+    overflow: hidden;
 }
 .m-close:not(#linkMenu){
     transition: max-height 1.8s cubic-bezier(0, 0.68, 0.58, 1);
     max-height: 0;
+    overflow: hidden;
 }
 .story{
     overflow: hidden;
@@ -209,6 +218,7 @@ img[alt='menu']{
     .b-b-lg{border-bottom: .3px solid rgba(128, 128, 128, 0.486);}
 }
 @media(max-width: 575.98px){
+    .block{padding-top: 12px;padding-bottom: 12px;}
     .b-b-sm{border-bottom: .3px solid rgba(128, 128, 128, 0.486);}
     .photo{margin-bottom: 15px;}
 }
@@ -271,23 +281,21 @@ text-transform: uppercase;
 letter-spacing: 0.7px;
 }
 .teamBg{
-    background-image: url(../images/headerBG.jpg);
+    background-image: url(../images/headerBG.webp);
     background-position: 50% 50%;
     background-size: cover;
     color: #ffffff;
 }
 .photo{
+    position: relative;
     background:none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 .name{
-    position: relative;
     padding: 25px;
     text-align: center;
     background: none;
     border: 1px solid #e1e1e17e;
+    box-sizing: border-box;
 }
 .name>div{
     color: #ffffff;
@@ -304,9 +312,6 @@ letter-spacing: 0.7px;
     font-weight: 300;
     text-transform: uppercase;
 }
-img{
-    box-sizing: border-box;
-}
 .linked{
     transition: all 1s ease;
     opacity: 0;
@@ -318,15 +323,10 @@ img{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #342e54;
-    box-shadow: 0 0 5px 5px #342e54;
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
     z-index: 5;
-}
-.inHover.name{
-    border: none;
 }
