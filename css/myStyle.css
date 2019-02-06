@@ -28,7 +28,7 @@ body{background: white;}
     min-height:inherit;
     background-image: linear-gradient(to right, #09052fc4 0%, #311d5ec4 100%);
 }
-#slider{
+#sliders{
     width: 60%;
     margin-bottom: 95px;
 }
@@ -211,30 +211,15 @@ img[alt='menu']{
 @media(min-width: 991.99px){
     .b-t{border-top: .3px solid rgba(128, 128, 128, 0.486);}
     .b-r{border-right: .3px solid rgba(128, 128, 128, 0.486);}
-    .grid>img{
-        width: 15%;
-    }
 }
 
 @media(max-width: 991.98px){  
     .b-r-lg{border-right: .3px solid rgba(128, 128, 128, 0.486);}
     .b-b-lg{border-bottom: .3px solid rgba(128, 128, 128, 0.486);}
-    .grid>img{
-        width: 35%;
-    }
-}
-@media(max-width: 719.98px){
-    .grid>img{
-        width: 50%;
-    } 
 }
 @media(max-width: 575.98px){
     .block{padding-top: 12px;padding-bottom: 12px;}
     .b-b-sm{border-bottom: .3px solid rgba(128, 128, 128, 0.486);}
-    .grid>img{
-        width: 80%;
-    }
-    .grid{display: none;}
 }
 
 .hed{
@@ -352,6 +337,20 @@ letter-spacing: 0.7px;
     font-size: 14px;
     font-weight: 300;
     color: #413d4b;
-    appearance: none;  
+    appearance: none;
+}
+.slickNav{
+    margin: 20px;
+    border-radius: 50%;
    
+}
+.w-70{
+    width: 70%;
+}
+.comentBg{
+    display: inline-block;
+    background-image: url(../images/headerBG.webp);
+    background-position: 50% 50%;
+    background-size: cover;
+    color: #ffffff;
 }

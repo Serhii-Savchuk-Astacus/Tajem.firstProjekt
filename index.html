@@ -9,11 +9,12 @@
     <link rel="stylesheet" href="css/myStyle.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="icon" type="image/png" href="favicon.png" />
-    <!-- <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script> -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+   
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
 <script src="js/isotope.pkgd.min.js"></script>
-<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-<!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script> -->
 <script src="js/wow.min.js"></script>
 
 </head>
@@ -21,7 +22,7 @@
     
 <section id='headId' class="headerBg">
     <div class="d-flex justify-content-center align-items-center filter">
-        <div id="slider">
+        <div id="sliders">
                     <div id="slideContent">
                             <div class=" justify-content-center  flex-column" data-num='0'>
                                     <h1 class="WeAreAwes">We Are Awesome Creative Agency 1</h1>
@@ -229,26 +230,95 @@
         <div class="row px-5 px-sm-1">
                     <div class="grid col-12">
                            <img class="element-item web" data-category="web" src="images/work/dMed.jpg" alt="dMed">  
-                           <img class="element-item web" data-category="web" src="images/work/lifeTime.JPG" alt="lifeTime" >
-                           <img class="element-item web" data-category="web" src="images/work/poweEqupment.jpg" alt="poweEqupment" >
-                           <img class="element-item web" data-category="web" src="images/work/limitless.jpg" alt="limitless" >
-                           <img class="element-item game" data-category="game" src="images/work/go.jpg" alt="go" >
-                           <img class="element-item game" data-category="game" src="images/work/bladeRanner.jpg" alt="tales" >
-                           <img class="element-item game" data-category="game" src="images/work/ccrashland.jpg" alt="ccrashland" >
-                           <img class="element-item game" data-category="game" src="images/work/clashClans.jpg" alt="tank" >
-                           <img class="element-item mobApp" data-category="mobApp" src="images/work/sleek.jpg" alt="sleek" >
-                           <img class="element-item mobApp" data-category="mobApp" src="images/work/pepperTap.jpg" alt="pepperTap" >
                            <img class="element-item mobApp" data-category="mobApp" src="images/work/clymb.png" alt="clymb" >
+                           <img class="element-item web" data-category="web" src="images/work/lifeTime.JPG" alt="lifeTime" >
+                           <img class="element-item game" data-category="game" src="images/work/bladeRanner.jpg" alt="tales" >
+                           <img class="element-item web" data-category="web" src="images/work/poweEqupment.jpg" alt="poweEqupment" >
+                           <img class="element-item mobApp" data-category="mobApp" src="images/work/pepperTap.jpg" alt="pepperTap" >
+                           <img class="element-item game" data-category="game" src="images/work/go.jpg" alt="go" >
+                           <img class="element-item game" data-category="game" src="images/work/clashClans.jpg" alt="tank" >
+                           <img class="element-item web" data-category="web" src="images/work/limitless.jpg" alt="limitless" >
+                           <img class="element-item mobApp" data-category="mobApp" src="images/work/sleek.jpg" alt="sleek" >
                            <img class="element-item mobApp" data-category="mobApp" src="images/work/blogArchiv.png" alt="blogArchiv" >
+                           <img class="element-item game" data-category="game" src="images/work/ccrashland.jpg" alt="ccrashland" >
                     </div>
         </div>
     </div>
 </section>
-<section>
-    <div class="container">
-        <div class="row"></div>
+<!-- Testimonials -->
+<section class="comentBg w-100">
+    <div class="filter">
+        <div class="container py-5">
+            <div class="row ">
+                <div class="col-12 text-center  d-flex align-items-center flex-column">
+                        <div class="my-5"><img src="images/lap.webp" alt=""></div>
+                            <div class="slider slider-for w-70 text-center">
+                                    <div class="d-inline-block"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore laboriosam expedita voluptatem doloremque cum quisquam sed officiis excepturi sunt, saepe exercitationem, molestias nemo nostrum consequuntur, possimus nisi eum voluptatum similique?</p>
+                                    <div class="name border-0">
+                                        <div>JANE GALADRIEL</div>
+                                        <span>CEO TENGKUREP</span>
+                                    </div></div>
+                                    <div class="d-inline-block"><p>Lorem ipsum,  amet consectetur adipisicing elit. Tempore laboriosam expedita voluptatem doloremque cum quisquam sed officiis excepturi sunt, saepe exercitationem, molestias nemo nostrum consequuntur, possimus nisi eum voluptatum similique?</p>
+                                    <div class="name border-0">
+                                        <div>Li Bing</div>
+                                        <span>MARKETING</span>
+                                    </div></div>
+                                    <div class="d-inline-block"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore laboriosam expedita voluptatem doloremque cum quisquam sed officiis excepturi sunt, saepe exercitationem, molestias nemo , possimus nisi eum voluptatum similique?</p>
+                                    <div class="name border-0">
+                                        <div>Mark Anderson</div>
+                                        <span>MARKETING</span>
+                                    </div></div>
+                                    <div class="d-inline-block"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore laboriosam expedita voluptatem doloremque cum quisquam sed officiis excepturi sunt, saepe exercitationem, molestias aboriosam expedita voluptatem doloremque nemo nostrum consequuntur, possimus nisi eum voluptatum similique?</p>
+                                    <div class="name border-0">
+                                        <div>Lili Woo</div>
+                                        <span>Client</span>
+                                    </div></div>
+                                    <div class="d-inline-block"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. doloremque cum quisquam sed officiis excepturi sunt, saepe exercitationem, molestias nemo nostrum consequuntur, possimus nisi eum voluptatum similique?</p>
+                                    <div class="name border-0">
+                                        <div>Gon Sleek</div>
+                                        <span>MARKETING</span>
+                                    </div></div> 
+                                    <div class="d-inline-block"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. doloremque cum quisquam sed officiis excepturi sunt, saepe exercitationem, molestias nemo nostrum consequuntur, possimus nisi eum voluptatum similique?</p>
+                                        <div class="name border-0">
+                                            <div>Gon Sleek</div>
+                                            <span>ENGINEERING </span>
+                                        </div></div> 
+                                  </div>
+                </div>
+               </div>
+               <div class="row d-flex justify-content-center">
+                    <div class="slider slider-nav col-6">
+                            <img src="images/coments/daria.jpg" alt="" class="slickNav">
+                            <img src="images/coments/man.jpg" alt="" class="slickNav">
+                            <img src="images/coments/maru.jpg" alt="" class="slickNav">
+                            <img src="images/coments/mike.jpg" alt="" class="slickNav">
+                            <img src="images/coments/mrWhite.jpg"  alt="" class="slickNav">
+                            <img src="images/coments/tesla.jpg"  alt="" class="slickNav">
+                        </div>
+               </div>
     </div>
 </section>
+<!-- contacts -->
+<section>
+<div class="container">
+    <div class="row d-flex flex-row-reverse flex-md-row">
+        <div class="col-12 col-md-6">
+            <div></div>
+            <input type="text" placeholder="Name" class="w-100">
+            <input type="email" placeholder="Email" class="w-100">
+            <input type="text" placeholder="Subject" class="w-100">
+            <textarea name="comment" rows="10"  placeholder="Your Massage" maxlength="350" class="w-100"></textarea>
+        </div>
+        <div class="col-12 col-md-6">
+
+        </div>
+    </div>
+</div>
+</section>
+<section></section>
+
+
+
               <script>
               new WOW().init();
               </script>
@@ -256,10 +326,10 @@
 var thumbsHead=document.querySelector('#headThumb').children;
 var idSlider=document.querySelector('#slideContent').children;
 //add pause if cursor at the slider
-document.querySelector('#slider').addEventListener('mouseover', function(){
+document.querySelector('#sliders').addEventListener('mouseover', function(){
 if(idInterval){clearInterval(idInterval);}
 })
-document.querySelector('#slider').addEventListener('mouseout',function(){
+document.querySelector('#sliders').addEventListener('mouseout',function(){
     if(idSlider)idInterval= setInterval(slide,2500);
 })
 //add Event to header thumbs
@@ -355,7 +425,36 @@ for(let i=0;i<photoTeam.length;++i){
     })
 }
 //isotope
-    var iso = new Isotope( '.grid', {
+var gridWidth=getComputedStyle(document.querySelector('.grid')).width;
+var gridPadding=getComputedStyle(document.querySelector('.grid')).paddingLeft;
+gridPadding=parseInt(gridPadding);
+gridPadding*=2;
+gridWidth=parseInt(gridWidth);
+gridWidth-=gridPadding;
+var gridImgColection=document.querySelector('.grid').children;
+var respons=5;
+if(gridWidth>920){
+    for(let i=0;i<gridImgColection.length;++i){
+    gridImgColection[i].style.width=(gridWidth/6)+'px';
+    }
+}
+if(gridWidth>680 && gridWidth<919){
+    respons=4;
+    for(let i=0;i<gridImgColection.length;++i){
+    gridImgColection[i].style.width=(gridWidth/4)+'px';
+    }}
+if(gridWidth>501 && gridWidth<679){
+    respons=3;
+    for(let i=0;i<gridImgColection.length;++i){
+    gridImgColection[i].style.width=(gridWidth/3)+'px';
+    }}
+if(gridWidth<500){
+    respons=2;
+    for(let i=0;i<gridImgColection.length;++i){
+    gridImgColection[i].style.width=(gridWidth/2)+'px';
+    }}
+   
+  var iso = new Isotope( '.grid', {
   itemSelector: '.element-item',
   layoutMode: 'fitRows'
 });
@@ -364,6 +463,26 @@ document.querySelector('.filters-select').addEventListener('change',function(){
     iso.arrange({ filter: filterValue });
     document.querySelector('.grid').style.display='block';
 });
+$('.slider-for').slick({
+   slidesToShow: 1,
+   slidesToScroll: 1,
+   arrows: false,
+   fade: true,
+   asNavFor: '.slider-nav'
+ });
+ $('.slider-nav').slick({
+   slidesToShow: respons,
+   slidesToScroll: 1,
+   asNavFor: '.slider-for',
+   dots: false,
+   focusOnSelect: true
+ });
+
+ $('a[data-slide]').click(function(e) {
+   e.preventDefault();
+   var slideno = $(this).data('slide');
+   $('.slider-nav').slick('slickGoTo', slideno - 1);
+ });
 </script>
 </body>
 </html>
