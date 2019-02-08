@@ -1,5 +1,21 @@
 html{scroll-behavior: smooth;}
 body{background: white;}
+.myHedStyle{
+    color: #413d4b;
+    font-family: "Playfair Display";
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.1px;
+}
+.textStyle{
+    color: #413d4bc5;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    letter-spacing: 0.42px;
+}
 .myBtn{
     display: inline-block;
     cursor: pointer;
@@ -49,14 +65,6 @@ body{background: white;}
     width: 50px;
 height: 1px;
 background-color: #00e0d0;
-}
-.textHeader{
-    text-align: center;
-    font-family: Roboto;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 24px;
-    letter-spacing: 0.7px;
 }
 .thumbs{
     position: absolute;
@@ -143,23 +151,6 @@ img[alt='menu']{
     max-height: 0;
     overflow: hidden;
 }
-.story{
-    overflow: hidden;
-    color: #413d4b;
-    font-family: Roboto;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 22px;
-    letter-spacing: 0.42px;
-}
-.story p{ opacity: 0.75;}
-.story h1{
-    font-family: "Playfair Display";
-    font-size: 22px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1.1px;
-}
 .videoBg{
     background-image: url(../images/videoBG.webp);
     background-position: 50% 50%;
@@ -220,14 +211,10 @@ img[alt='menu']{
 @media(max-width: 575.98px){
     .block{padding-top: 12px;padding-bottom: 12px;}
     .b-b-sm{border-bottom: .3px solid rgba(128, 128, 128, 0.486);}
-}
-
-.hed{
-font-family: "Playfair Display";
-font-size: 22px;
-font-weight: 700;
-text-transform: uppercase;
-letter-spacing: 1.1px;
+    .contactOrder_1{order: 1;}
+    .contactOrder_2{order: 2;}
+    .contactOrder_3{order: 3;}
+    .contactOrder_4{order: 4;}
 }
 .sep{
 text-align: center;
@@ -263,15 +250,6 @@ height: 1px;
 background-color: rgba(128, 128, 128, 0.486);
 }
 .block>img{margin: 10px;}
-.block>div{
-    opacity: 0.75;
-    color: #333333;
-    font-family: Roboto;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 22px;
-    letter-spacing: 0.7px;
-}
 .block>h6{
 color: #413d4b;
 font-family: "Roboto - Black";
@@ -353,4 +331,34 @@ letter-spacing: 0.7px;
     background-position: 50% 50%;
     background-size: cover;
     color: #ffffff;
+}
+input:valid{
+    border-color:#00e0d0;
+}
+input:invalid{
+    border-color: red;
+}
+textarea:valid{
+    border-color:#00e0d0;
+}
+textarea:invalid{
+    border-color: red;
+}
+.footerBg{
+    background-image: url(../images/footer.webp);
+    background-position: 50% 50%;
+    background-repeat: cover;
+}
+.footerHead{
+    color: #ffffff;
+    font-family: "Roboto - Black";
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+    padding-top: 31px;
+    padding-bottom: 30px;
+}
+a[href^="tel:"]{
+    text-decoration: none;
+    color: white;
 }
