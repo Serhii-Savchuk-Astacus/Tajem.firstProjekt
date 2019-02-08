@@ -357,8 +357,7 @@ textarea:invalid{
 .footerBg{
     background-image: url(../images/footer.webp);
     background-position: 50% 50%;
-    background-repeat: cover;
-    position: relative;
+    background-size : cover;
 }
 .footerHead{
     color: #ffffff;
@@ -385,8 +384,6 @@ a[href^="#"]{
    left: 0;
    background: rgba(0,0,0,0.8);
    z-index: 99999;
-   -webkit-transition: opacity 400ms ease-in;
-   -moz-transition: opacity 400ms ease-in;
    transition: opacity 400ms ease-in;
    display: none;
    pointer-events: none;
@@ -407,9 +404,6 @@ a[href^="#"]{
     padding: 5px 20px 13px 20px;
     border-radius: 10px;
     background: #fff;
-    background: -moz-linear-gradient(#fff, #999);
-    background: -webkit-linear-gradient(#fff, #999);
-    background: -o-linear-gradient(#fff, #999);
 }
 .close {
       background: #606061;
@@ -422,11 +416,7 @@ a[href^="#"]{
       width: 24px;
       text-decoration: none;
       font-weight: bold;
-      -webkit-border-radius: 12px;
-      -moz-border-radius: 12px;
       border-radius: 12px;
-      -moz-box-shadow: 1px 1px 3px #000;
-      -webkit-box-shadow: 1px 1px 3px #000;
       box-shadow: 1px 1px 3px #000;
     }
 .close:hover { background: #00d9ff; }
@@ -438,4 +428,5 @@ a[href^="#"]{
     color:white;
     text-decoration: none;
   } 
+  .zero{width: 0;height: 0;display: none;}
        

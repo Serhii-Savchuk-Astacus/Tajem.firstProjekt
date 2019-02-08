@@ -10,17 +10,15 @@
     <link rel="stylesheet" href="css/animate.css">
     <link rel="icon" type="image/png" href="favicon.png" />
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-   
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <script src="js/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="slick/slick.min.js"></script>
 <script src="js/isotope.pkgd.min.js"></script>
 <script src="js/wow.min.js"></script>
 
 </head>
-<body>
-    
-<section id='headId' class="headerBg">
+<body>  
+<section id='headId' class="headerBg"><h1 class="zero">h</h1>
     <div class="d-flex justify-content-center align-items-center filter">
         <div id="sliders">
                     <div id="slideContent">
@@ -51,7 +49,7 @@
     </div>
 </section>
 <!-- nav bar -->
-<section class="navPos">
+<section class="navPos"><h1 class="zero">h</h1>
         <div class="w-100">
                 <div class="container d-lg-flex justify-content-between align-items-center">
                         <div class=" d-flex d-lg-inline-block justify-content-between align-items-center">     
@@ -71,9 +69,9 @@
             </div>
 </section>
 <!-- our story -->
-<section id="aboutId" class="container ">
+<section id="aboutId" class="container "><h1 class="zero">h</h1>
        <div class="row mt-5 mb-5">
-           <div class="col-12 col-lg-4 d-none d-lg-flex justify-content-center"><div><img src="images/logotipe.webp" alt="logotipe"></div></div>
+           <div class="col-12 col-lg-4 d-none d-lg-flex justify-content-center animated slideInUp slow wow"><div><img src="images/logotipe.webp" alt="logotipe"></div></div>
            <div class="col-12 col-lg-8">
                <div class="myHedStyle">OUR STORY</div>  
                <p class="textStyle">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus</p>
@@ -92,7 +90,7 @@
    
 </section>
 <!-- video -->
-<section class="videoBg">
+<section class="videoBg"><h1 class="zero">h</h1>
     <div class="filter pt-5 pb-5">
             <div class="container video_holder d-flex justify-content-center align-items-center">  
                     <div id="overlay"></div> 
@@ -102,7 +100,7 @@
     </div>
 </section>
 <!-- EXPERTISE -->
-<section id="expertiseId" class="container pt-5 pb-5">
+<section id="expertiseId" class="container pt-5 pb-5"><h1 class="zero">h</h1>
         <div class="row d-flex justify-content-center align-items-center flex-column mb-5">
             <h1 class="myHedStyle textColorDarck">EXPERTISE</h1>
             <div class="sep textColorGray">Lorem ipsum dolor sit amet proin gravida nibh vel velit</div>
@@ -141,7 +139,7 @@
        </div>
 </section>
 <!-- team -->
-<section id="teamsId" class="teamBg">
+<section id="teamsId" class="teamBg"><h1 class="zero">h</h1>
         <div class="filter">
                 <div class="container pt-5 pb-5">
                         <div class="row d-flex justify-content-center align-items-center flex-column">
@@ -214,7 +212,7 @@
         </div>
 </section>
 <!-- OUR WORKS -->
-<section class="pb-4">
+<section class="pb-4"><h1 class="zero">h</h1>
     <div id="worksId" class="container py-5">
         <div class="row py-5">
             <div class="col-12 col-sm-6 text-center my-3 my-sm-0 myHedStyle">OUR WORKS</div>
@@ -246,7 +244,7 @@
     </div>
 </section>
 <!-- Testimonials -->
-<section id="peapleId" class="comentBg w-100">
+<section id="peapleId" class="comentBg w-100"><h1 class="zero">h</h1>
     <div class="filter">
         <div class="container py-5">
             <div class="row ">
@@ -296,10 +294,11 @@
                             <img src="images/coments/tesla.jpg"  alt="" class="slickNav">
                         </div>
                </div>
+        </div>
     </div>
 </section>
 <!-- contacts -->
-<section id="contacts" class="py-4">
+<section id="contacts" class="py-4"><h1 class="zero">h</h1>
 <div class="container">
     <div class="row d-flex">
             <div class="col-12 col-md-6 contactOrder_3  text-center myHedStyle my-5">GIVE US A GOOD NEWS</div>
@@ -331,7 +330,7 @@
 </div>
 </section>
 <!-- footer -->
-<section class="footerBg ">
+<section class="footerBg "><h1 class="zero">h</h1>
 <div class="filter py-4">
         <div class="container">
                 <div class="row ">
@@ -349,7 +348,7 @@
                     </div>
                 <div class="col-12 col-md-4"><div class="footerHead textColorWhite">STAY IN TOUCH</div>
                 <div class="input-group">
-                        <input type="mail" class="form-control mr-2" placeholder="Subscribe our newsletter" aria-label="" aria-describedby="basic-addon1">
+                        <input type="email" class="form-control mr-2" placeholder="Subscribe our newsletter" aria-label="">
                         <div class="input-group-append">
                           <button class="btn btn-success bg-secondary border-0" type="button"><img src="images/paper.webp" alt=""></button>
                         </div>
@@ -401,7 +400,6 @@
                
         </div>
 </div>
-
 </section>
 
 
@@ -560,6 +558,10 @@ $('.slider-for').slick({
  $('.slider-nav').slick({
    slidesToShow: respons,
    slidesToScroll: 1,
+   speed:800,
+   autoplay:true,
+  autoplaySpeed:3850,
+  arrows:true,
    asNavFor: '.slider-for',
    dots: false,
    focusOnSelect: true
