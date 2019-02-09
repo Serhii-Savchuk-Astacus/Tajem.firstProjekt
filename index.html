@@ -306,7 +306,7 @@
         <div class="col-12 col-md-6 contactOrder_4 ">  
             <input type="text" placeholder="Name" class="w-100 mb-3 p-2" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$">
             <input type="email" placeholder="Email" class="w-100 mb-3 p-2">
-            <input type="text" placeholder="Subject" class="w-100 mb-3 p-2" pattern="{3,120}$">
+            <input type="text" placeholder="Subject" class="w-100 mb-3 p-2" pattern="[]{3,10}$">
             <textarea name="comment" rows="9"  placeholder="Your Massage" maxlength="1100" class="w-100 p-2"></textarea>
         </div>
         <div class="col-12 col-md-6 contactOrder_2 d-flex  b-b-sm">
@@ -539,15 +539,27 @@ if(gridWidth<500){
     gridImgColection[i].style.width=(gridWidth/2)+'px';
     }}
    
-  var iso = new Isotope( '.grid', {
+//   var iso = new Isotope( '.grid', {
+//   itemSelector: '.element-item',
+//   layoutMode: 'fitRows'
+// });
+var $grid = $('.grid').isotope({
   itemSelector: '.element-item',
   layoutMode: 'fitRows'
 });
-document.querySelector('.filters-select').addEventListener('change',function(){
-    var filterValue = this.value;
-    iso.arrange({ filter: filterValue });
-    document.querySelector('.grid').style.display='block';
+// document.querySelector('.filters-select').addEventListener('change',function(){
+//     var filterValue = this.value;
+//     iso.arrange({ filter: filterValue });
+//     document.querySelector('.grid').style.display='block';
+// });
+$('.filters-select').on( 'change', function() {
+  // get filter value from option value
+  var filterValue = this.value;
+  // use filterFn if matches value
+  
+  $grid.isotope({ filter: filterValue });
 });
+//slick
 $('.slider-for').slick({
    slidesToShow: 1,
    slidesToScroll: 1,
