@@ -10,7 +10,7 @@ body{background: white;}
 }
 .textStyle{
     color: #413d4bc5;
-    font-family: Roboto;
+    font-family: "Roboto";
     font-size: 14px;
     font-weight: 300;
     line-height: 22px;
@@ -52,7 +52,6 @@ body{background: white;}
     background-color: #0a06359f;
 }
 #sliders{
-    width: 60%;
     margin-bottom: 95px;
 }
 .WeAreAwes{
@@ -209,22 +208,25 @@ img[alt='menu']{
 @media(min-width: 991.99px){
     .b-t{border-top: .3px solid rgba(128, 128, 128, 0.486);}
     .b-r{border-right: .3px solid rgba(128, 128, 128, 0.486);}
+    .grid>img{width: 16.66%;}
 }
 
 @media(max-width: 991.98px){  
     .b-r-lg{border-right: .3px solid rgba(128, 128, 128, 0.486);}
     .b-b-lg{border-bottom: .3px solid rgba(128, 128, 128, 0.486);}
+    .grid>img{width: 25%;}
 }
 @media(max-width: 767.98px){
     .contactOrder_1{order: 1;}
     .contactOrder_2{order: 2;}
     .contactOrder_3{order: 3;}
     .contactOrder_4{order: 4;}
+    
 }
 @media(max-width: 575.98px){
     .block{padding-top: 12px;padding-bottom: 12px;}
     .b-b-sm{border-bottom: .3px solid rgba(128, 128, 128, 0.486);}
-    
+    .grid>img{width: 50%;}
 }
 .sep{
 text-align: center;
@@ -295,7 +297,7 @@ letter-spacing: 0.7px;
 .name>span{
     opacity: 0.7;
     color: #fafafa;
-    font-family: Roboto;
+    font-family: "Roboto";
     font-size: 13px;
     font-weight: 300;
     text-transform: uppercase;
@@ -320,7 +322,7 @@ letter-spacing: 0.7px;
 }
 .filters-select{
     border: none;
-    font-family: Roboto;
+    font-family: "Roboto";
     letter-spacing: 0.7px;
     font-size: 14px;
     font-weight: 300;
@@ -328,7 +330,7 @@ letter-spacing: 0.7px;
     appearance: none;
 }
 .slickNav{
-    margin: 20px;
+    margin: auto;
     border-radius: 50%;
    
 }
