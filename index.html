@@ -228,8 +228,9 @@
         </div>
         <div class="row px-5 px-sm-1">
                     <div class="col-12">
-                           <div class="grid  row">
-                            <img class="element-item web" data-category="web" src="images/work/dMed.webp" alt="dMed">  
+                           <div class="qqrow">
+                            <div class="grid">
+                                <img class="element-item web" data-category="web" src="images/work/dMed.webp" alt="dMed">  
                             <img class="element-item mobApp" data-category="mobApp" src="images/work/clymb.webp" alt="clymb" >
                             <img class="element-item web" data-category="web" src="images/work/lifeTime.webp" alt="lifeTime" >
                             <img class="element-item game" data-category="game" src="images/work/bladeRanner.webp" alt="tales" >
@@ -241,6 +242,7 @@
                             <img class="element-item mobApp" data-category="mobApp" src="images/work/sleek.webp" alt="sleek" >
                             <img class="element-item mobApp" data-category="mobApp" src="images/work/blogArchiv.webp" alt="blogArchiv" >
                             <img class="element-item game" data-category="game" src="images/work/ccrashland.webp" alt="ccrashland" >
+                            </div>
                            </div>
                     </div>
         </div>
@@ -514,8 +516,8 @@ for(let i=0;i<photoTeam.length;++i){
 }
 //isotope
 
-window.addEventListener('DOMContentLoaded',function(){
-    var $grid = $('.grid').masonry({
+window.addEventListener('load', function(){
+    var $grid = $('.grid').isotope({
   itemSelector: '.element-item',
   layoutMode: 'fitRows'
 });
@@ -569,7 +571,7 @@ $('.slider-for').slick({
     {
       breakpoint: 480,
       settings: {
-        slidesToShow: 2,
+        slidesToShow: 1,
         slidesToScroll: 1
       }
     }

@@ -215,7 +215,7 @@ img[alt='menu']{
 @media(max-width: 991.98px){  
     .b-r-lg{border-right: .3px solid rgba(128, 128, 128, 0.486);}
     .b-b-lg{border-bottom: .3px solid rgba(128, 128, 128, 0.486);}
-    .grid>img{width: 25%;}
+    .grid>img{width: 25%;float: left;}
 }
 @media(max-width: 767.98px){
     .contactOrder_1{order: 1;}
