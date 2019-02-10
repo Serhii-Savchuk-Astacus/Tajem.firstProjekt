@@ -52,6 +52,7 @@ body{background: white;}
     background-color: #0a06359f;
 }
 #sliders{
+    width: 60%;
     margin-bottom: 95px;
 }
 .WeAreAwes{
@@ -330,7 +331,7 @@ letter-spacing: 0.7px;
     appearance: none;
 }
 .slickNav{
-    margin: auto;
+    margin: 20px;
     border-radius: 50%;
    
 }
