@@ -515,13 +515,10 @@ for(let i=0;i<photoTeam.length;++i){
 //isotope
 
 window.addEventListener('DOMContentLoaded',function(){
-    var $grid = $('.grid').isotope({
+    var $grid = $('.grid').masonry({
   itemSelector: '.element-item',
   layoutMode: 'fitRows'
 });
-$grid.isotope({ filter: '.web' });
-$grid.isotope({ filter: '*' });
-
 $grid.isotope({ filter: '*' });
 $('.filters-select').on( 'change', function() {
   var filterValue = this.value;
