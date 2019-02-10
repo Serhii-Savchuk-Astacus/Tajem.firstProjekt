@@ -519,6 +519,10 @@ window.addEventListener('DOMContentLoaded',function(){
   itemSelector: '.element-item',
   layoutMode: 'fitRows'
 });
+$grid.isotope({ filter: '.web' });
+$grid.isotope({ filter: '*' });
+
+$grid.isotope({ filter: '*' });
 $('.filters-select').on( 'change', function() {
   var filterValue = this.value;
   $grid.isotope({ filter: filterValue });
