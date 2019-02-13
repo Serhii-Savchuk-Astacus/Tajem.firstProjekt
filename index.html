@@ -8,8 +8,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="css/myStyle.css">
     <link rel="stylesheet" href="css/animate.css">
-    <link href="https://fonts.googleapis.com/css?family=Hammersmith+One|Playfair+Display|Roboto" rel="stylesheet">
-    <!-- <link rel="icon" type="image/png" href="favicon.png" /> -->
+    <link href="https://fonts.googleapis.com/css?family=Hammersmith+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <link rel="icon" type="image/png" href="favicon.png" />
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <script src="js/jquery-3.3.1.min.js"></script>
@@ -18,8 +20,29 @@
 <script src="js/wow.min.js"></script>
 
 </head>
-<body>  
-<section id='headId' class="headerBg"><h1 class="zero">h</h1>
+<body data-sp="scroll" data-targ="linkMenu"> 
+    <!-- nav bar -->
+        <nav class="navPos">
+            <div class="w-100">
+                    <div class="container d-lg-flex justify-content-between align-items-center">
+                            <div class=" d-flex d-lg-inline-block justify-content-between align-items-center">     
+                                            <img src="images/logo.webp" alt="logo">
+                                            <img id="navMenuBtn" class="d-lg-none" src="images/menu.png" alt="menu" data-targ="#linkMenu">         
+                            </div>
+                            <div id="linkMenu" class="m-close bar d-flex flex-lg-row flex-column">
+                                    <a href="#headId" class="active">HOME</a>
+                                    <a href="#ourStoryId">ABOUT</a>
+                                    <a href="#expertiseId" >EXPERTISE</a>
+                                    <a href="#teamsId" >TEAMS</a>
+                                    <a href="#worksId" >WORKS</a>
+                                    <a href="#peapleId" >PEOPLE </a>
+                                    <a href="#contacts" >CONTACT</a>
+                            </div>
+                    </div> 
+                </div>
+    </nav> 
+    <!-- header -->
+<header id='headId' class="headerBg">
     <div class="d-flex justify-content-center align-items-center filter">
         <div id="sliders">
                     <div id="slideContent">
@@ -42,39 +65,19 @@
                     </div>
         </div>
         <ul id="headThumb" class="thumbs w-100 ">
-                <li class="active" data-num='0'></li>
+                <li class="ThumbsActive" data-num='0'></li>
                 <li data-num='1'></li>
                 <li data-num='2'></li>
                 <li data-num='3'></li>
         </ul>
     </div>
-</section>
-<!-- nav bar -->
-<section class="navPos"><h1 class="zero">h</h1>
-        <div class="w-100">
-                <div class="container d-lg-flex justify-content-between align-items-center">
-                        <div class=" d-flex d-lg-inline-block justify-content-between align-items-center">     
-                                        <img src="images/logo.webp" alt="logo">
-                                        <img id="navMenuBtn" class="d-lg-none" src="images/menu.png" alt="menu" data-targ="#linkMenu">         
-                        </div>
-                        <div id="linkMenu" class="m-close bar d-flex flex-lg-row flex-column">
-                                <a href="#headId" class="navBtn">HOME</a>
-                                <a href="#aboutId" class="navBtn">ABOUT</a>
-                                <a href="#expertiseId" class="navBtn">EXPERTISE</a>
-                                <a href="#teamsId" class="navBtn">TEAMS</a>
-                                <a href="#worksId" class="navBtn">WORKS</a>
-                                <a href="#peapleId" class="navBtn">PEOPLE </a>
-                                <a href="#contacts" class="navBtn">CONTACT</a>
-                        </div>
-                </div> 
-            </div>
-</section>
+</header>
 <!-- our story -->
-<section id="aboutId" class="container "><h1 class="zero">h</h1>
+<section id="ourStoryId" class="container "><h2 class="zero">h</h2>
        <div class="row mt-5 mb-5">
            <div class="col-12 col-lg-4 d-none d-lg-flex justify-content-center animated slideInUp slow wow"><div><img src="images/logotipe.webp" alt="logotipe"></div></div>
            <div class="col-12 col-lg-8">
-               <div class="myHedStyle">OUR STORY</div>  
+               <p class="myHedStyle">OUR STORY</p>  
                <p class="textStyle">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus</p>
                <p class="textStyle">Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
                <div id='storyText' class="row m-close">
@@ -91,7 +94,7 @@
    
 </section>
 <!-- video -->
-<section class="videoBg"><h1 class="zero">h</h1>
+<section class="videoBg"><h2 class="zero">h</h2>
     <div class="filter pt-5 pb-5">
             <div class="container video_holder d-flex justify-content-center align-items-center">  
                     <div id="overlay"></div> 
@@ -101,9 +104,9 @@
     </div>
 </section>
 <!-- EXPERTISE -->
-<section id="expertiseId" class="container pt-5 pb-5"><h1 class="zero">h</h1>
+<section id="expertiseId" class="container pt-5 pb-5">
         <div class="row d-flex justify-content-center align-items-center flex-column mb-5">
-            <h1 class="myHedStyle textColorDarck">EXPERTISE</h1>
+            <p class="myHedStyle textColorDarck">EXPERTISE</p>
             <div class="sep textColorGray">Lorem ipsum dolor sit amet proin gravida nibh vel velit</div>
         </div>
        <div class="row">
@@ -140,7 +143,7 @@
        </div>
 </section>
 <!-- team -->
-<section id="teamsId" class="teamBg"><h1 class="zero">h</h1>
+<section id="teamsId" class="teamBg"><h2 class="zero">h</h2>
         <div class="filter">
                 <div class="container pt-5 pb-5">
                         <div class="row d-flex justify-content-center align-items-center flex-column">
@@ -152,8 +155,8 @@
                                            <div>
                                             <div class="photo"><img src="images/team/semf.webp" alt="SEMF UCUK" class="img-fluid">
                                                 <div class="linked">
-                                                    <a href="https://www.linkedin.com/"><img src="images/linkedin.png" alt="linkedIn"></a>
-                                                   <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="facebook"></a>
+                                                    <a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin.png" alt="linkedIn"></a>
+                                                   <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png" alt="facebook"></a>
                                                    </div>
                                             </div>
                                              <div class="name">
@@ -166,8 +169,8 @@
                                           <div>
                                             <div class="photo"> <img src="images/team/dik.webp" alt="DIK ADALIN" class="img-fluid">
                                                 <div class="linked">
-                                                    <a href="https://www.linkedin.com/"><img src="images/linkedin.png" alt="linkedIn"></a>
-                                                    <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="facebook"></a>
+                                                    <a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin.png" alt="linkedIn"></a>
+                                                    <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png" alt="facebook"></a>
                                                 </div>
                                             </div>
                                             <div class="name">
@@ -180,8 +183,8 @@
                                        <div>
                                         <div class="photo"> <img src="images/team/jeng.webp" alt="JENG KOL" class="img-fluid">
                                             <div class="linked">
-                                                <a href="https://www.linkedin.com/"><img src="images/linkedin.png" alt="linkedIn"></a>
-                                                <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="facebook"></a>
+                                                <a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin.png" alt="linkedIn"></a>
+                                                <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png" alt="facebook"></a>
                                             </div>
                                         </div>
                                             <div class="name">
@@ -194,8 +197,8 @@
                                         <div>
                                             <div class="photo"><img src="images/team/pet.webp" alt="PET ROMAK" class="img-fluid">
                                                 <div class="linked">
-                                                    <a href="https://www.linkedin.com/"><img src="images/linkedin.png" alt="linkedIn"></a>
-                                                    <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="facebook"></a>
+                                                    <a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin.png" alt="linkedIn"></a>
+                                                    <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png" alt="facebook"></a>
                                                 </div>
                                 </div>
                                         <div class="name ">
@@ -213,7 +216,7 @@
         </div>
 </section>
 <!-- OUR WORKS -->
-<section class="pb-4"><h1 class="zero">h</h1>
+<section class="pb-4"><h2 class="zero">h</h2>
     <div id="worksId" class="container py-5">
         <div class="row py-5">
             <div class="col-12 col-sm-6 text-center my-3 my-sm-0 myHedStyle">OUR WORKS</div>
@@ -228,7 +231,6 @@
         </div>
         <div class="row px-5 px-sm-1">
                     <div class="col-12">
-                           <div class="qqrow">
                             <div class="grid">
                                 <img class="element-item web" data-category="web" src="images/work/dMed.webp" alt="dMed">  
                             <img class="element-item mobApp" data-category="mobApp" src="images/work/clymb.webp" alt="clymb" >
@@ -243,49 +245,48 @@
                             <img class="element-item mobApp" data-category="mobApp" src="images/work/blogArchiv.webp" alt="blogArchiv" >
                             <img class="element-item game" data-category="game" src="images/work/ccrashland.webp" alt="ccrashland" >
                             </div>
-                           </div>
                     </div>
         </div>
     </div>
 </section>
 <!-- Testimonials -->
-<section id="peapleId" class="comentBg w-100"><h1 class="zero">h</h1>
+<section id="peapleId" class="comentBg w-100"><h2 class="zero">h</h2>
     <div class="filter">
-        <div class="container py-5">
+        <div class="container py-5"><blockquote></blockquote>
             <div class="row ">
                 <div class="col-12 text-center  d-flex align-items-center flex-column">
                         <div class="my-5"><img src="images/lap.webp" alt=""></div>
                             <div class="slider slider-for w-70 text-center">
-                                    <div class="textStyle textColorWhite"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore laboriosam expedita voluptatem doloremque cum quisquam sed officiis excepturi sunt, saepe exercitationem, molestias nemo nostrum consequuntur, possimus nisi eum voluptatum similique?</p>
+                                    <blockquote class="textStyle textColorWhite">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore laboriosam expedita voluptatem doloremque cum quisquam sed officiis excepturi sunt, saepe exercitationem, molestias nemo nostrum consequuntur, possimus nisi eum voluptatum similique?
                                     <div class="name border-0">
                                         <div>JANE GALADRIEL</div>
                                         <span>CEO TENGKUREP</span>
-                                    </div></div>
-                                    <div class="textStyle textColorWhite"><p>Lorem ipsum,  amet consectetur adipisicing elit. Tempore laboriosam expedita voluptatem doloremque cum quisquam sed officiis excepturi sunt, saepe exercitationem, molestias nemo nostrum consequuntur, possimus nisi eum voluptatum similique?</p>
+                                    </div></blockquote>
+                                    <blockquote class="textStyle textColorWhite">Lorem ipsum,  amet consectetur adipisicing elit. Tempore laboriosam expedita voluptatem doloremque cum quisquam sed officiis excepturi sunt, saepe exercitationem, molestias nemo nostrum consequuntur, possimus nisi eum voluptatum similique?
                                     <div class="name border-0">
                                         <div>Li Bing</div>
                                         <span>MARKETING</span>
-                                    </div></div>
-                                    <div class="textStyle textColorWhite"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore laboriosam expedita voluptatem doloremque cum quisquam sed officiis excepturi sunt, saepe exercitationem, molestias nemo , possimus nisi eum voluptatum similique?</p>
+                                    </div></blockquote>
+                                    <blockquote class="textStyle textColorWhite">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore laboriosam expedita voluptatem doloremque cum quisquam sed officiis excepturi sunt, saepe exercitationem, molestias nemo , possimus nisi eum voluptatum similique?
                                     <div class="name border-0">
                                         <div>Mark Anderson</div>
                                         <span>MARKETING</span>
-                                    </div></div>
-                                    <div class="textStyle textColorWhite"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore laboriosam expedita voluptatem doloremque cum quisquam sed officiis excepturi sunt, saepe exercitationem, molestias aboriosam expedita voluptatem doloremque nemo nostrum consequuntur, possimus nisi eum voluptatum similique?</p>
+                                    </div></blockquote>
+                                    <blockquote class="textStyle textColorWhite">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore laboriosam expedita voluptatem doloremque cum quisquam sed officiis excepturi sunt, saepe exercitationem, molestias aboriosam expedita voluptatem doloremque nemo nostrum consequuntur, possimus nisi eum voluptatum similique?
                                     <div class="name border-0">
                                         <div>Lili Woo</div>
                                         <span>Client</span>
-                                    </div></div>
-                                    <div class="textStyle textColorWhite"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. doloremque cum quisquam sed officiis excepturi sunt, saepe exercitationem, molestias nemo nostrum consequuntur, possimus nisi eum voluptatum similique?</p>
+                                    </div></blockquote>
+                                    <blockquote class="textStyle textColorWhite">Lorem ipsum, dolor sit amet consectetur adipisicing elit. doloremque cum quisquam sed officiis excepturi sunt, saepe exercitationem, molestias nemo nostrum consequuntur, possimus nisi eum voluptatum similique?
                                     <div class="name border-0">
                                         <div>Gon Sleek</div>
                                         <span>MARKETING</span>
-                                    </div></div> 
-                                    <div class="textStyle textColorWhite"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. doloremque cum quisquam sed officiis excepturi sunt, saepe exercitationem, molestias nemo nostrum consequuntur, possimus nisi eum voluptatum similique?</p>
+                                    </div></blockquote> 
+                                    <blockquote class="textStyle textColorWhite">Lorem ipsum, dolor sit amet consectetur adipisicing elit. doloremque cum quisquam sed officiis excepturi sunt, saepe exercitationem, molestias nemo nostrum consequuntur, possimus nisi eum voluptatum similique?
                                         <div class="name border-0">
                                             <div>Gon Sleek</div>
                                             <span>ENGINEERING </span>
-                                        </div></div> 
+                                        </div></blockquote> 
                                   </div>
                 </div>
                </div>
@@ -303,7 +304,7 @@
     </div>
 </section>
 <!-- contacts -->
-<section id="contacts" class="py-4"><h1 class="zero">h</h1>
+<section id="contacts" class="py-4"><h2 class="zero">h</h2>
 <div class="container">
     <div class="row d-flex">
             <div class="col-12 col-md-6 contactOrder_3  text-center myHedStyle my-5">GIVE US A GOOD NEWS</div>
@@ -316,18 +317,18 @@
         </div>
         <div class="col-12 col-md-6 contactOrder_2 d-flex  b-b-sm">
                     <div class="col-6 d-flex flex-column justify-content-between align-items-center flex-fill">
-                            <img src="images/happyClient/Billabong.webp" alt="" class="mb-4 mb-md-0">
-                            <img src="images/happyClient/Barneys.webp" alt="" class="mb-4 mb-md-0">
-                            <img src="images/happyClient/Calvin_klein.webp" alt="" class="mb-4 mb-md-0">
-                            <img src="images/happyClient/Converse.webp" alt="" class="mb-4 mb-md-0">
-                            <img src="images/happyClient/gucci.webp" alt="" class="mb-4 mb-md-0">
+                            <a href="https://www.billabong.com" target="_blank"><img src="images/happyClient/Billabong.webp" alt="Billabong" class="mb-4 mb-md-0"></a>
+                            <a href="https://www.barneys.com/" target="_blank"><img src="images/happyClient/Barneys.webp" alt="Barneys" class="mb-4 mb-md-0"></a>
+                            <a href="https://www.calvinklein.us/en" target="_blank"><img src="images/happyClient/Calvin_klein.webp" alt="Calvin klein" class="mb-4 mb-md-0"></a>
+                            <a href="https://www.converse.com/us/en_us/c/converse" target="_blank"><img src="images/happyClient/Converse.webp" alt="Converse" class="mb-4 mb-md-0"></a>
+                            <a href="https://www.gucci.com/int/en/" target="_blank"><img src="images/happyClient/gucci.webp" alt="gucci" class="mb-4 mb-md-0"></a>
                         </div>
                     <div class="col-6 d-flex flex-column justify-content-between align-items-center ">
-                            <img src="images/happyClient/Levi's.webp" alt="" class="mb-4 mb-md-0">
-                            <img src="images/happyClient/Mango.webp" alt="" class="mb-4 mb-md-0">
-                            <img src="images/happyClient/NIKE.webp" alt="" class="mb-4 mb-md-0">
-                            <img src="images/happyClient/Puma.webp" alt="" class="mb-4 mb-md-0">
-                            <img src="images/happyClient/Zara_Logo.webp" alt="" class="mb-4 mb-md-0">
+                            <a href="https://www.levi.com/US/en_US/" target="_blank"><img src="images/happyClient/Levis.webp" alt="Levis" class="mb-4 mb-md-0"></a>
+                            <a href="https://shop.mango.com/ua-ru" target="_blank"><img src="images/happyClient/Mango.webp" alt="Mango" class="mb-4 mb-md-0"></a>
+                            <a href="https://www.nike.com" target="_blank"><img src="images/happyClient/NIKE.webp" alt="NIKE" class="mb-4 mb-md-0"></a>
+                            <a href="https://us.puma.com/en/us/home" target="_blank"><img src="images/happyClient/Puma.webp" alt="Puma" class="mb-4 mb-md-0"></a>
+                            <a href="https://www.zara.com/us/en/" target="_blank"><img src="images/happyClient/Zara_Logo.webp" alt="Zara Logo" class="mb-4 mb-md-0"></a>
                         </div>
         </div>
     </div>
@@ -335,7 +336,7 @@
 </div>
 </section>
 <!-- footer -->
-<section class="footerBg "><h1 class="zero">h</h1>
+<footer class="footerBg ">
 <div class="filter py-4">
         <div class="container">
                 <div class="row ">
@@ -359,17 +360,17 @@
                         </div>
                       </div>
                       <div class="d-flex justify-content-between w-100 my-3">
-                          <div> <a href="https://dribbble.com/"><img src="images/footerLink/dribbble.webp" alt="dribbble" ></a></div>
-                          <div> <a href="https://www.facebook.com/SENIBELADIRIdanSENJATA/"><img src="images/footerLink/facebook.webp" alt="facebook" ></a></div>
-                          <div> <a href="https://plus.google.com/u/0/communities/111339680493900574766"><img src="images/footerLink/gplus.webp" alt="google" ></a></div>
-                          <div> <a href="https://www.instagram.com/explore/tags/tajam/"><img src="images/footerLink/instagram.webp" alt="instagram" ></a></div>
-                          <div> <a href="https://twitter.com/officialtajam"><img src="images/footerLink/twitter.webp" alt="twitter" ></a></div>
-                          <div> <a href="https://www.youtube.com/watch?v=NEZ3nTgeBL8"><img src="images/footerLink/youtube.webp" alt="youtube" ></a></div>
+                          <div> <a href="https://dribbble.com/" target="_blank"><img src="images/footerLink/dribbble.webp" alt="dribbble" ></a></div>
+                          <div> <a href="https://www.facebook.com/SENIBELADIRIdanSENJATA/" target="_blank"><img src="images/footerLink/facebook.webp" alt="facebook" ></a></div>
+                          <div> <a href="https://plus.google.com/u/0/communities/111339680493900574766" target="_blank"><img src="images/footerLink/gplus.webp" alt="google" ></a></div>
+                          <div> <a href="https://www.instagram.com/explore/tags/tajam/" target="_blank"><img src="images/footerLink/instagram.webp" alt="instagram" ></a></div>
+                          <div> <a href="https://twitter.com/officialtajam" target="_blank"><img src="images/footerLink/twitter.webp" alt="twitter" ></a></div>
+                          <div> <a href="https://www.youtube.com/watch?v=NEZ3nTgeBL8" target="_blank"><img src="images/footerLink/youtube.webp" alt="youtube" ></a></div>
                       </div>
                 </div>
                 </div>
                <div class="row my-4">
-                   <div class="col-12 col-md-4 d-flex justify-content-between text-right textStyle textColorWhite text-uppercase">
+                   <div class="col-12 col-md-4 d-flex justify-content-between textStyle textColorWhite text-uppercase">
                        <div><a href="#openModal_1" class="textStyle nonDecor">HELP</a>
                         <div id="openModal_1" class="modalDialog">
                                <div>
@@ -398,21 +399,28 @@
                         </div>
                     </div>
                    </div>
-                   <div class="col-12 col-md-8">
-                       <div class="text-right textStyle textColorWhite">Copyright © 2015 - Tajem Creative</div>
+                   <div class="col-12 col-md-8 my-4 my-md-2">
+                       <div class="text-left text-md-right textStyle textColorWhite">Copyright © 2015 - Tajem Creative</div>
                    </div>
                </div>     
                
         </div>
 </div>
-</section>
+</footer>
+<script>
+new WOW().init();
+</script>
+//nav active
+<script src="js/scrollmenu.js">
+</script>
+<script> 
+new ScrollMenu('#linkMenu a',{
+    duration: 800,
+    activeOffset: 80,
+    scrollOffset: 50,
 
+});
 
-
-              <script>
-              new WOW().init();
-              </script>
-<script>   
 var thumbsHead=document.querySelector('#headThumb').children;
 var idSlider=document.querySelector('#slideContent').children;
 //add pause if cursor at the slider
@@ -442,12 +450,12 @@ for(let i=0; i<idSlider.length;++i)
 }
 for(let i=0;i<thumbsHead.length;++i)
 {
-    if(thumbsHead[i].classList.contains('active')){
-    thumbsHead[i].classList.remove('active');}
+    if(thumbsHead[i].classList.contains('ThumbsActive')){
+    thumbsHead[i].classList.remove('ThumbsActive');}
 }
 idSlider[num].classList.remove('d-none');
 idSlider[num].classList.add('fadeIn','animated','slow');
-thumbsHead[num].classList.add('active');
+thumbsHead[num].classList.add('ThumbsActive');
 if(isClick=='click'&&idInterval) {idInterval= setInterval(slide,2500);}
 }
 document.querySelector('#navMenuBtn').addEventListener('click',openClose);
@@ -557,7 +565,7 @@ $('.slider-for').slick({
     {
       breakpoint: 1024,
       settings: {
-        slidesToShow: 5,
+        slidesToShow: 4,
         slidesToScroll: 1
       }
     },

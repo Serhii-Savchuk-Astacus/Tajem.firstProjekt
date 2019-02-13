@@ -1,4 +1,4 @@
-html{scroll-behavior: smooth;}
+/* html{scroll-behavior: smooth;} */
 body{background: white;}
 .myHedStyle{
     color: #413d4b;
@@ -57,7 +57,7 @@ body{background: white;}
 }
 .WeAreAwes{
     text-align: center;
-    font-family: "Playfair Display - Black";
+    font-family: "Playfair Display";
     font-size: 32px;
     font-weight: 400;
     letter-spacing: 0.32px;
@@ -92,15 +92,14 @@ background-color: #00e0d0;
     border: 2px solid #00e0d0;
     border-radius: 100%;
 }
-.thumbs>li.active{
+.ThumbsActive{
     background-color: #00e0d0;
 }
-
 .navPos{
     background-color:#0a06359f;
     position: sticky;
+    margin-bottom: -50px;
     top: 0;
-    margin-top: -50px;
     z-index: 15;
 }
 img[alt='menu']{
@@ -110,14 +109,14 @@ img[alt='menu']{
 .bar>a{
     margin-left: 12px;
     text-decoration: none;
-    font-family: "Roboto - Black";
+    font-family: "Roboto";
     font-size: 13px;
     font-weight: 400;
     text-transform: uppercase;
     color: #ffffff;
     letter-spacing: 0.33px;
 }
-.bar>a:first-child{
+.bar>a.active{
     color: #00e0d0;
 }
 @media(max-width: 991.98px) { 
@@ -182,7 +181,7 @@ img[alt='menu']{
 #overlay>div{
     text-align: center;
     color: #ffffff;
-    font-family: "Roboto - Black";
+    font-family: "Roboto";
     font-size: 16px;
     text-transform: uppercase;
     letter-spacing: 0.8px;
@@ -265,7 +264,7 @@ background-color: rgba(128, 128, 128, 0.486);
 .block>img{margin: 10px;}
 .block>h6{
 color: #413d4b;
-font-family: "Roboto - Black";
+font-family: "Roboto";
 font-size: 14px;
 font-weight: 700;
 text-transform: uppercase;
@@ -290,7 +289,7 @@ letter-spacing: 0.7px;
 }
 .name>div{
     color: #ffffff;
-    font-family: "Roboto - Black";
+    font-family: "Roboto";
     font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 0.7px;
@@ -364,7 +363,7 @@ textarea:invalid{
 }
 .footerHead{
     color: #ffffff;
-    font-family: "Roboto - Black";
+    font-family: "Roboto";
     font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 0.7px;
