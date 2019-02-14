@@ -431,4 +431,6 @@ a[href^="#"]{
     text-decoration: none;
   } 
   .zero{width: 0;height: 0;display: none;}
-       
+.slick-center{
+    transform: scale(1.4);
+}
