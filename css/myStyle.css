@@ -17,6 +17,7 @@ body{background: white;}
     letter-spacing: 0.42px;
 }
 .myBtn{
+    background: none;
     display: inline-block;
     cursor: pointer;
     color: #00e0d0;

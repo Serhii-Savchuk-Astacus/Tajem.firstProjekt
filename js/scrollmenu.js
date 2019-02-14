@@ -12,7 +12,7 @@
 
   ScrollMenu.prototype.initDefaultOptions = function() {
     this.options = {
-      duration: 400,
+      duration: 0,
       activeOffset: 40,
       scrollOffset: 10,
 

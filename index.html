@@ -20,7 +20,7 @@
 <script src="js/wow.min.js"></script>
 
 </head>
-<body data-sp="scroll" data-targ="linkMenu"> 
+<body > 
     <!-- nav bar -->
         <nav class="navPos">
             <div class="w-100">
@@ -210,7 +210,7 @@
                             </div>
                             <div class="row d-flex justify-content-center align-items-center flex-column ">
                                 <p class="textColorWhiteGray text-center" style="opacity: 0.7;">Become part of our dream team, let’s join us ! </p>
-                                <p class="myBtn"><a href="#contacts" >WE ARE HIRING</a></p>
+                                <button id="teamHiring" class="myBtn"><a href="#contacts" >WE ARE HIRING</a></button>
                             </div>
                 </div>
         </div>
@@ -310,18 +310,22 @@
             <div class="col-12 col-md-6 contactOrder_3  text-center myHedStyle my-5">GIVE US A GOOD NEWS</div>
             <div class="col-12 col-md-6 contactOrder_1  text-center myHedStyle my-5 ">OUR HAPPY CLIENT</div><br>
         <div class="col-12 col-md-6 contactOrder_4 ">  
-            <input type="text" placeholder="Name" class="w-100 mb-3 p-2" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$">
+            <form onsubmit="alert('PHP is not found');">
+                <input type="text" placeholder="Name" class="w-100 mb-3 p-2" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$">
             <input type="email" placeholder="Email" class="w-100 mb-3 p-2">
-            <input type="text" placeholder="Subject" class="w-100 mb-3 p-2" pattern="[]{3,10}$">
+            <input type="text" placeholder="Subject" class="w-100 mb-3 p-2" pattern="[A-Za-z0-9_-~!@#$%^&*()?,.]{4,250}">
             <textarea name="comment" rows="9"  placeholder="Your Massage" maxlength="1100" class="w-100 p-2"></textarea>
+            <button type="submit" class="myBtn my-3">SUBMIT</button>
+            </form>
         </div>
         <div class="col-12 col-md-6 contactOrder_2 d-flex  b-b-sm">
-                    <div class="col-6 d-flex flex-column justify-content-between align-items-center flex-fill">
+                    <div class="col-6 d-flex flex-column justify-content-between align-items-center flex-fill ">
                             <a href="https://www.billabong.com" target="_blank"><img src="images/happyClient/Billabong.webp" alt="Billabong" class="mb-4 mb-md-0"></a>
                             <a href="https://www.barneys.com/" target="_blank"><img src="images/happyClient/Barneys.webp" alt="Barneys" class="mb-4 mb-md-0"></a>
                             <a href="https://www.calvinklein.us/en" target="_blank"><img src="images/happyClient/Calvin_klein.webp" alt="Calvin klein" class="mb-4 mb-md-0"></a>
                             <a href="https://www.converse.com/us/en_us/c/converse" target="_blank"><img src="images/happyClient/Converse.webp" alt="Converse" class="mb-4 mb-md-0"></a>
                             <a href="https://www.gucci.com/int/en/" target="_blank"><img src="images/happyClient/gucci.webp" alt="gucci" class="mb-4 mb-md-0"></a>
+                            <div class="d-none d-md-block p-md-3"></div>
                         </div>
                     <div class="col-6 d-flex flex-column justify-content-between align-items-center ">
                             <a href="https://www.levi.com/US/en_US/" target="_blank"><img src="images/happyClient/Levis.webp" alt="Levis" class="mb-4 mb-md-0"></a>
@@ -329,10 +333,11 @@
                             <a href="https://www.nike.com" target="_blank"><img src="images/happyClient/NIKE.webp" alt="NIKE" class="mb-4 mb-md-0"></a>
                             <a href="https://us.puma.com/en/us/home" target="_blank"><img src="images/happyClient/Puma.webp" alt="Puma" class="mb-4 mb-md-0"></a>
                             <a href="https://www.zara.com/us/en/" target="_blank"><img src="images/happyClient/Zara_Logo.webp" alt="Zara Logo" class="mb-4 mb-md-0"></a>
+                            <div class="d-none d-md-block p-md-3"></div>
                         </div>
         </div>
     </div>
-    <div class="row"><div class="myBtn m-3">SUBMIT</div></div>
+   
 </div>
 </section>
 <!-- footer -->
@@ -420,7 +425,11 @@ new ScrollMenu('#linkMenu a',{
     scrollOffset: 50,
 
 });
-
+new ScrollMenu('#teamHiring a',{
+    duration: 800,
+    activeOffset: 80,
+    scrollOffset: 50,
+});
 var thumbsHead=document.querySelector('#headThumb').children;
 var idSlider=document.querySelector('#slideContent').children;
 //add pause if cursor at the slider
