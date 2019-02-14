@@ -247,6 +247,20 @@
                             </div>
                     </div>
         </div>
+        <div class="row d-flex justify-content-center mt-5"><a href="#loadWindow" class="textStyle nonDecor"><button type="button" class="myBtn" >load more</button></a>
+            <div id="loadWindow" class="modalDialog">
+                   <div>
+                        <a href="#close" title="close" class="close">X</a>
+                        <form enctype="multipart/form-data" method="post">
+                        <input type="file" id="fileElem" multiple accept="image/*,image/jpeg,image/png" style="display:none" onchange="handleFiles(this.files)">
+                        <form>
+                                <input type="radio" name="Web-designer" value="Web"> Web designer<Br>
+                                    <input type="radio" name="Mobile_APP" value="mobApp">Mobile APP<Br>
+                                    <input type="radio" name="GAME_DEVELOPMENT" value="game"> Game Development
+                        </form>
+                    </form>
+                   </div>
+               </div></div>
     </div>
 </section>
 <!-- coment -->
