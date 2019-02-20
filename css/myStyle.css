@@ -209,13 +209,13 @@ img[alt='menu']{
 @media(min-width: 991.99px){
     .b-t{border-top: .3px solid rgba(128, 128, 128, 0.486);}
     .b-r{border-right: .3px solid rgba(128, 128, 128, 0.486);}
-    .grid>img{width: 16.66%;}
+    .grid>img{max-width: 16.66%;min-width: 16.66%;;float: left;}
 }
 
 @media(max-width: 991.98px){  
     .b-r-lg{border-right: .3px solid rgba(128, 128, 128, 0.486);}
     .b-b-lg{border-bottom: .3px solid rgba(128, 128, 128, 0.486);}
-    .grid>img{width: 25%;float: left;}
+    .grid>img{max-width: 25%;min-width: 25%;float: none;}
 }
 @media(max-width: 767.98px){
     .contactOrder_1{order: 1;}
@@ -227,8 +227,13 @@ img[alt='menu']{
 @media(max-width: 575.98px){
     .block{padding-top: 12px;padding-bottom: 12px;}
     .b-b-sm{border-bottom: .3px solid rgba(128, 128, 128, 0.486);}
-    .grid>img{width: 50%;}
+    .grid>img{max-width: 50%;min-width: 50%;;float: left;}
 }
+.grid:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
 .sep{
 text-align: center;
 position: relative;
@@ -409,6 +414,10 @@ a[href^="#"]{
     padding: 5px 20px 13px 20px;
     border-radius: 10px;
     background: #fff;
+}
+#loadWindow.modalDialog > div{height:auto;
+overflow-y:hidden;
+width: 50%;
 }
 .close {
       background: #606061;

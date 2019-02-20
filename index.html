@@ -15,10 +15,11 @@
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
     <script src="slick/slick.min.js"></script>
-<script src="js/isotope.pkgd.min.js"></script>
-<script src="js/wow.min.js"></script>
-
+    
+    <script src="js/wow.min.js"></script>
+    <script src="js/scrollmenu.js"></script>
 </head>
 <body > 
     <!-- nav bar -->
@@ -229,35 +230,32 @@
               </select>
             </div>
         </div>
-        <div class="row px-5 px-sm-1">
-                    <div class="col-12">
+                    <div class="col-12 mx-5 mx-sm-1">
                             <div class="grid">
-                                <img class="element-item web" data-category="web" src="images/work/dMed.webp" alt="dMed">  
-                            <img class="element-item mobApp" data-category="mobApp" src="images/work/clymb.webp" alt="clymb" >
-                            <img class="element-item web" data-category="web" src="images/work/lifeTime.webp" alt="lifeTime" >
-                            <img class="element-item game" data-category="game" src="images/work/bladeRanner.webp" alt="tales" >
-                            <img class="element-item web" data-category="web" src="images/work/poweEqupment.webp" alt="poweEqupment" >
-                            <img class="element-item mobApp" data-category="mobApp" src="images/work/pepperTap.webp" alt="pepperTap" >
-                            <img class="element-item game" data-category="game" src="images/work/go.webp" alt="go" >
-                            <img class="element-item game" data-category="game" src="images/work/clashClans.webp" alt="tank" >
-                            <img class="element-item web" data-category="web" src="images/work/limitless.webp" alt="limitless" >
-                            <img class="element-item mobApp" data-category="mobApp" src="images/work/sleek.webp" alt="sleek" >
-                            <img class="element-item mobApp" data-category="mobApp" src="images/work/blogArchiv.webp" alt="blogArchiv" >
-                            <img class="element-item game" data-category="game" src="images/work/ccrashland.webp" alt="ccrashland" >
-                            </div>
+                             <img class="element-item web" data-category="web" src="images/work/dMed.webp" alt="dMed">  
+                             <img class="element-item mobApp" data-category="mobApp" src="images/work/clymb.webp" alt="clymb" >
+                             <img class="element-item web" data-category="web" src="images/work/lifeTime.webp" alt="lifeTime" >
+                             <img class="element-item game" data-category="game" src="images/work/bladeRanner.webp" alt="tales" >
+                             <img class="element-item web" data-category="web" src="images/work/poweEqupment.webp" alt="poweEqupment" >
+                             <img class="element-item mobApp" data-category="mobApp" src="images/work/pepperTap.webp" alt="pepperTap" >
+                             <img class="element-item game" data-category="game" src="images/work/go.webp" alt="go" >
+                             <img class="element-item game" data-category="game" src="images/work/clashClans.webp" alt="tank" >
+                             <img class="element-item web" data-category="web" src="images/work/limitless.webp" alt="limitless" >
+                             <img class="element-item mobApp" data-category="mobApp" src="images/work/sleek.webp" alt="sleek" >
+                             <img class="element-item mobApp" data-category="mobApp" src="images/work/blogArchiv.webp" alt="blogArchiv" >
+                             <img class="element-item game" data-category="game" src="images/work/ccrashland.webp" alt="ccrashland" >
+                             </div>
                     </div>
-        </div>
         <div class="row d-flex justify-content-center mt-5"><a href="#loadWindow" class="textStyle nonDecor"><button type="button" class="myBtn" >load more</button></a>
             <div id="loadWindow" class="modalDialog">
                    <div>
                         <a href="#close" title="close" class="close">X</a>
                         <form enctype="multipart/form-data" method="post">
-                        <input type="file" id="fileElem" multiple accept="image/*,image/jpeg,image/png" style="display:none" onchange="handleFiles(this.files)">
-                        <form>
-                                <input type="radio" name="Web-designer" value="Web"> Web designer<Br>
-                                    <input type="radio" name="Mobile_APP" value="mobApp">Mobile APP<Br>
-                                    <input type="radio" name="GAME_DEVELOPMENT" value="game"> Game Development
-                        </form>
+                        <input type="file" id="fileElem" multiple accept="image/*,image/jpeg,image/png" value="load image" class="myBtn"><br>
+                                            <input type="radio" name="category" value="web"> Web designer<Br>
+                                                <input type="radio" name="category" value="mobApp"> Mobile APP<Br>
+                                                <input type="radio" name="category" value="game"> Game Development <br>
+                                                <a href="#closeLoadWindow" id="addImgBtn"><span class="myBtn">sabmit</span></a>
                     </form>
                    </div>
                </div></div>
@@ -426,13 +424,14 @@
         </div>
 </div>
 </footer>
-<script>
-new WOW().init();
-</script>
-//nav active
-<script src="js/scrollmenu.js">
-</script>
+
+
+
+
+
 <script> 
+new WOW().init();
+//nav active
 new ScrollMenu('#linkMenu a',{
     duration: 800,
     activeOffset: 80,
@@ -545,20 +544,6 @@ for(let i=0;i<photoTeam.length;++i){
         this.querySelector('img.img-fluid').style.filter='';
     })
 }
-//isotope
-
-window.addEventListener('load', function(){
-    var $grid = $('.grid').isotope({
-  itemSelector: '.element-item',
-  layoutMode: 'fitRows'
-});
-
-$('.filters-select').on( 'change', function() {
-  var filterValue = this.value;
-  $grid.isotope({ filter: filterValue });
-});
-})
-
 //slick
 $('.slider-for').slick({
    slidesToShow: 1,
@@ -615,6 +600,42 @@ $('.slider-for').slick({
    var slideno = $(this).data('slide');
    $('.slider-nav').slick('slickGoTo', slideno - 1);
  });
+
+//isotope
+
+
+var $grid = $('.grid').isotope({
+    itemSelector: '.element-item',
+    layoutMode: 'fitRows'
+});
+
+$('.filters-select').on( 'change', function() {
+  var filterValue = this.value;
+  $grid.isotope({ filter: filterValue });
+});
+
+var addImgToDom=document.querySelector('#addImgBtn');
+addImgToDom.addEventListener('click',handleFiles);
+ function handleFiles(){
+    var inputFile=document.querySelector('#fileElem');
+    var curFile=inputFile.files;
+    var category='all';
+    var inputRadio=document.querySelectorAll('input[name="category"]');
+    for(let i=0;i<inputRadio.length;++i){
+        if(inputRadio[i].checked==true)category=inputRadio[i].value;
+    }
+   
+    if(curFile.length===0){return}
+    else{
+        for(let i=0;i<curFile.length;++i){
+            var $content = $('<img class="element-item '+category+'" data-category="'+category+'" src="'+window.URL.createObjectURL(curFile[i])+'" alt="'+curFile[i].name+'" >');
+            $grid.append( $content )
+            .isotope( 'appended', $content )
+        }
+    }
+    $grid.isotope('shuffle');
+    
+ }
 </script>
 </body>
 </html>
