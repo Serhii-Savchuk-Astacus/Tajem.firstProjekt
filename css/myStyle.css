@@ -446,3 +446,27 @@ width: 50%;
 .slick-center{
     transform: scale(1.4);
 }
+.bg-dribbble {
+    width: 35px; height: 35px;
+    background: url('../images/footerLink/css_sprites.png') -10px -10px;
+}
+.bg-facebook {
+    width: 35px; height: 35px;
+    background: url('../images/footerLink/css_sprites.png') -65px -10px;
+}
+.bg-gplus {
+    width: 35px; height: 35px;
+    background: url('../images/footerLink/css_sprites.png') -10px -65px;
+}
+.bg-instagram {
+    width: 35px; height: 35px;
+    background: url('../images/footerLink/css_sprites.png') -65px -65px;
+}
+.bg-twitter {
+    width: 35px; height: 35px;
+    background: url('../images/footerLink/css_sprites.png') -120px -10px;
+}
+.bg-youtube {
+    width: 35px; height: 35px;
+    background: url('../images/footerLink/css_sprites.png') -120px -65px;
+}
