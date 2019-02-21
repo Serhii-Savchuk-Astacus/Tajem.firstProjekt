@@ -112,32 +112,32 @@
         </div>
        <div class="row bdExpert">
             <div class="block col-12 col-sm-6 col-lg-4 b-r b-r-lg b-b-lg b-b-sm ">
-                    <img src="images/web.webp" alt="web" class="slower animated heartBeat">
+                <div class="slower animated heartBeat bg-web my-3"></div>
                     <h6>WEB DESIGN & DEVELOPMENT</h6>
                     <div class="textStyle">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</div>
                 </div>
                 <div class="block col-12 col-sm-6 col-lg-4 b-r b-b-lg b-b-sm">
-                    <img src="images/branding.webp" alt="branding" class="slower animated heartBeat">
+                        <div class="slower animated heartBeat bg-branding my-3"></div>
                     <h6>BRANDING IDENTITY</h6>
                     <div class="textStyle">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</div>
                 </div>
                 <div class="block col-12 col-sm-6 col-lg-4 b-r-lg b-b-lg b-b-sm">
-                    <img src="images/mobile.webp" alt="mobile" class="slower animated heartBeat">
+                        <div class="slower animated heartBeat bg-mobile my-3"></div>
                     <h6>MOBILE APP</h6>
                     <div class="textStyle">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</div>
                 </div>
                 <div class="block col-12 col-sm-6 col-lg-4 b-r b-t b-b-lg b-b-sm">
-                    <img src="images/search.webp" alt="search" class="slower animated heartBeat">
+                        <div class="slower animated heartBeat bg-search my-3"></div>
                     <h6>SEARCH ENGINE OPTIMIZATION</h6>
                     <div class="textStyle">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</div>
                 </div>
                 <div class="block col-12 col-sm-6 col-lg-4 b-r b-t b-r-lg b-b-sm">
-                    <img src="images/game.webp" alt="game" class="slower animated heartBeat">
+                        <div class="slower animated heartBeat bg-game my-3"></div>
                     <h6>GAME DEVELOPMENT</h6>
                     <div class="textStyle">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</div>
                 </div>
                 <div class="block col-12 col-sm-6 col-lg-4 b-t">
-                    <img src="images/love.webp" alt="love" class="slower animated heartBeat">
+                        <div class="slower animated heartBeat bg-love my-3"></div>
                     <h6>MADE WITH LOVE</h6>
                     <div class="textStyle">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</div>
                 </div>
@@ -230,7 +230,7 @@
               </select>
             </div>
         </div>
-                    <div class="col-12 mx-5 mx-sm-1">
+                    <div class="col-12 p-0">
                             <div class="grid">
                              <img class="element-item web" data-category="web" src="images/work/dMed.webp" alt="dMed">  
                              <img class="element-item mobApp" data-category="mobApp" src="images/work/clymb.webp" alt="clymb" >
@@ -251,7 +251,8 @@
                    <div>
                         <a href="#close" title="close" class="close">X</a>
                         <form enctype="multipart/form-data" method="post">
-                        <input type="file" id="fileElem" multiple accept="image/*,image/jpeg,image/png" value="load image" class="myBtn"><br>
+                            <label class="myBtn">Select a file <input type="file" id="fileElem" multiple accept="image/*,image/jpeg,image/png" value="load image" class=" d-none"></label>
+                        <br>
                                             <input type="radio" name="category" value="web"> Web designer<Br>
                                                 <input type="radio" name="category" value="mobApp"> Mobile APP<Br>
                                                 <input type="radio" name="category" value="game"> Game Development <br>
@@ -602,17 +603,21 @@ $('.slider-for').slick({
  });
 
 //isotope
-
-
-var $grid = $('.grid').isotope({
+var $grid
+var filterValue
+window.addEventListener('load', function(){
+    $grid = $('.grid').isotope({
     itemSelector: '.element-item',
     layoutMode: 'fitRows'
 });
 
 $('.filters-select').on( 'change', function() {
-  var filterValue = this.value;
+  filterValue = this.value;
   $grid.isotope({ filter: filterValue });
 });
+})
+
+
 
 var addImgToDom=document.querySelector('#addImgBtn');
 addImgToDom.addEventListener('click',handleFiles);
