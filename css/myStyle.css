@@ -614,3 +614,9 @@ width: 50%;
     background: url('../images/happyClient/css_sprites_happy_client.png') -10px -237px;
 }
 .h_70{height: 70px;}
+svg:hover #color { 
+    stroke: white;
+  }
+  svg{
+      filter: drop-shadow( 0 2px 2px rgb(19, 18, 18));
+  }
