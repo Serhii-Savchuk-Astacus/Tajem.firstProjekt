@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
     <script src="js/isotope.pkgd.min.js"></script>
     <script src="slick/slick.min.js"></script>
     
@@ -230,18 +231,18 @@
         </div>
                     <div class="col-12 p-0">
                             <div class="grid">
-                             <img class="element-item web" data-category="web" src="images/work/dMed.webp" alt="dMed">  
-                             <img class="element-item mobApp" data-category="mobApp" src="images/work/clymb.webp" alt="clymb" >
-                             <img class="element-item web" data-category="web" src="images/work/lifeTime.webp" alt="lifeTime" >
-                             <img class="element-item game" data-category="game" src="images/work/bladeRanner.webp" alt="tales" >
-                             <img class="element-item web" data-category="web" src="images/work/poweEqupment.webp" alt="poweEqupment" >
-                             <img class="element-item mobApp" data-category="mobApp" src="images/work/pepperTap.webp" alt="pepperTap" >
-                             <img class="element-item game" data-category="game" src="images/work/go.webp" alt="go" >
-                             <img class="element-item game" data-category="game" src="images/work/clashClans.webp" alt="tank" >
-                             <img class="element-item web" data-category="web" src="images/work/limitless.webp" alt="limitless" >
-                             <img class="element-item mobApp" data-category="mobApp" src="images/work/sleek.webp" alt="sleek" >
-                             <img class="element-item mobApp" data-category="mobApp" src="images/work/blogArchiv.webp" alt="blogArchiv" >
-                             <img class="element-item game" data-category="game" src="images/work/ccrashland.webp" alt="ccrashland" >
+                             <img class="element-item web"  src="images/work/dMed.webp" alt="dMed">  
+                             <img class="element-item mobApp"  src="images/work/clymb.webp" alt="clymb" >
+                             <img class="element-item web"  src="images/work/lifeTime.webp" alt="lifeTime" >
+                             <img class="element-item game"  src="images/work/bladeRanner.webp" alt="tales" >
+                             <img class="element-item web"  src="images/work/poweEqupment.webp" alt="poweEqupment" >
+                             <img class="element-item mobApp"  src="images/work/pepperTap.webp" alt="pepperTap" >
+                             <img class="element-item game"  src="images/work/go.webp" alt="go" >
+                             <img class="element-item game"  src="images/work/clashClans.webp" alt="tank" >
+                             <img class="element-item web"  src="images/work/limitless.webp" alt="limitless" >
+                             <img class="element-item mobApp"  src="images/work/sleek.webp" alt="sleek" >
+                             <img class="element-item mobApp"  src="images/work/blogArchiv.webp" alt="blogArchiv" >
+                             <img class="element-item game"  src="images/work/ccrashland.webp" alt="ccrashland" >
                              </div>
                     </div>
         <div class="row d-flex justify-content-center mt-5"><a href="#loadWindow" class="textStyle nonDecor"><button type="button" class="myBtn" >load more</button></a>
@@ -251,9 +252,11 @@
                         <form enctype="multipart/form-data" method="post">
                             <label class="myBtn">Select a file <input type="file" id="fileElem" multiple accept="image/*,image/jpeg,image/png" value="load image" class=" d-none"></label>
                         <br>
+                        <span>Select a category</span><br>
                                             <input type="radio" name="category" value="web"> Web designer<Br>
                                                 <input type="radio" name="category" value="mobApp"> Mobile APP<Br>
                                                 <input type="radio" name="category" value="game"> Game Development <br>
+                                                <input type="radio" name="category" value="None"> None <br>
                                                 <a href="#closeLoadWindow" id="addImgBtn"><span class="myBtn">sabmit</span></a>
                     </form>
                    </div>
@@ -385,7 +388,7 @@
                       </div>
                 </div>
                 </div>
-               <div class="row my-4">
+               <div class="row my-4 d-flex align-items-center">
                    <div class="col-12 col-md-4 d-flex justify-content-between textStyle textColorWhite text-uppercase">
                        <div><a href="#openModal_1" class="textStyle nonDecor">HELP</a>
                         <div id="openModal_1" class="modalDialog">
@@ -423,11 +426,6 @@
         </div>
 </div>
 </footer>
-
-
-
-
-
 <script> 
 new WOW().init();
 //nav active
@@ -608,7 +606,9 @@ window.addEventListener('load', function(){
     itemSelector: '.element-item',
     layoutMode: 'fitRows'
 });
-
+$grid.imagesLoaded().progress( function() {
+  $grid.isotope('layout');
+});
 $('.filters-select').on( 'change', function() {
   filterValue = this.value;
   $grid.isotope({ filter: filterValue });
@@ -632,12 +632,12 @@ addImgToDom.addEventListener('click',handleFiles);
     else{
         for(let i=0;i<curFile.length;++i){
             var $content = $('<img class="element-item '+category+'" data-category="'+category+'" src="'+window.URL.createObjectURL(curFile[i])+'" alt="'+curFile[i].name+'" >');
-            $grid.append( $content )
-            .isotope( 'appended', $content )
+            $grid.append( $content ).isotope( 'appended', $content );
         }
     }
-    $grid.isotope('shuffle');
-    
+    $grid.imagesLoaded().progress( function() {
+  $grid.isotope('layout');
+});
  }
 </script>
 </body>
