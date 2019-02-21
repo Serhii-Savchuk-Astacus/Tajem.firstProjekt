@@ -494,3 +494,45 @@ width: 50%;
     width: 50px; height: 42px;
     background: url('../images/expertis_sprite.png') -149px -10px;
 }
+
+.bg-Barneys {
+    width: 154px; height: 41px;
+    background: url('../images/happyClient/css_sprites_happy_client.png') -10px -100px;
+}
+.bg-Billabong {
+    width: 130px; height: 70px;
+    background: url('../images/happyClient/css_sprites_happy_client.png') -10px -10px;
+}
+.bg-Calvin_klein {
+    width: 151px; height: 24px;
+    background: url('../images/happyClient/css_sprites_happy_client.png') -293px -10px;
+}
+.bg-Converse {
+    width: 113px; height: 69px;
+    background: url('../images/happyClient/css_sprites_happy_client.png') -160px -10px;
+}
+.bg-gucci {
+    width: 140px; height: 21px;
+    background: url('../images/happyClient/css_sprites_happy_client.png') -293px -96px;
+}
+.bg-Levis {
+    width: 109px; height: 53px;
+    background: url('../images/happyClient/css_sprites_happy_client.png') -144px -161px;
+}
+.bg-Mango {
+    width: 138px; height: 22px;
+    background: url('../images/happyClient/css_sprites_happy_client.png') -293px -54px;
+}
+.bg-NIKE {
+    width: 95px; height: 34px;
+    background: url('../images/happyClient/css_sprites_happy_client.png') -293px -137px;
+}
+.bg-Puma {
+    width: 114px; height: 56px;
+    background: url('../images/happyClient/css_sprites_happy_client.png') -10px -161px;
+}
+.bg-Zara_Logo {
+    width: 162px; height: 22px;
+    background: url('../images/happyClient/css_sprites_happy_client.png') -10px -237px;
+}
+.h_70{height: 70px;}
