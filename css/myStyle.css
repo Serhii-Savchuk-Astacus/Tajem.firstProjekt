@@ -632,6 +632,7 @@ width: 50%;
     background: url('../images/css_sprites.png') -10px -10px;
 }
 .bg-paper {
+    display: block;
     width: 25px; height: 25px;
     background: url('../images/css_sprites.png') -10px -59px;
 }
