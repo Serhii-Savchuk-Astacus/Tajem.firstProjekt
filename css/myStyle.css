@@ -1,5 +1,6 @@
 @font-face {
     font-family: 'Roboto';
+    font-display: auto;
     font-style: normal;
     font-weight: 300;
     src: url('../fonts/roboto-v18-latin-300.eot'); /* IE9 Compat Modes */
@@ -13,6 +14,7 @@
   /* roboto-regular - latin */
   @font-face {
     font-family: 'Roboto';
+    font-display: auto;
     font-style: normal;
     font-weight: 400;
     src: url('../fonts/roboto-v18-latin-regular.eot'); /* IE9 Compat Modes */
@@ -26,6 +28,7 @@
   /* roboto-700 - latin */
   @font-face {
     font-family: 'Roboto';
+    font-display: auto;
     font-style: normal;
     font-weight: 700;
     src: url('../fonts/roboto-v18-latin-700.eot'); /* IE9 Compat Modes */
@@ -39,6 +42,7 @@
   /* playfair-display-regular - latin */
 @font-face {
     font-family: 'Playfair Display';
+    font-display: auto;
     font-style: normal;
     font-weight: 400;
     src: url('../fonts/playfair-display-v13-latin-regular.eot'); /* IE9 Compat Modes */
@@ -52,6 +56,7 @@
   /* playfair-display-700 - latin */
   @font-face {
     font-family: 'Playfair Display';
+    font-display: auto;
     font-style: normal;
     font-weight: 700;
     src: url('../fonts/playfair-display-v13-latin-700.eot'); /* IE9 Compat Modes */
@@ -65,6 +70,7 @@
   /* hammersmith-one-regular - latin */
 @font-face {
     font-family: 'Hammersmith One';
+    font-display: auto;
     font-style: normal;
     font-weight: 400;
     src: url('../fonts/hammersmith-one-v9-latin-regular.eot'); /* IE9 Compat Modes */
@@ -198,6 +204,8 @@ img[alt='menu']{
 }
 .bar>a.active{
     color: #00e0d0;
+    font-weight: 800;
+    text-shadow: 1px 1px 3px #000000;
 }
 @media(max-width: 991.98px) { 
     .bar>a{
