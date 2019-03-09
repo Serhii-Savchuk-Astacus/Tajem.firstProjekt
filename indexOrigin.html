@@ -256,7 +256,8 @@
                                                 <input type="radio" name="category" value="mobApp"> Mobile APP<Br>
                                                 <input type="radio" name="category" value="game"> Game Development <br>
                                                 <input type="radio" name="category" value="None"> None <br>
-                                                <a href="#closeLoadWindow" id="addImgBtn"><span class="myBtn">sabmit</span></a>
+                                                <button type="submit" class="myBtn"><a href="#closeLoadWindow" id="addImgBtn">sabmit</a></button>
+                                                
                     </form>
                    </div>
                </div></div>
@@ -622,14 +623,6 @@ document.querySelector('#fileElem').addEventListener('change',function(){
     document.querySelector('label.myBtn').style.borderColor='#01DF3A';
     document.querySelector('label.myBtn').style.color='#01DF3A';
 })
-document.querySelector('#addImgBtn>.myBtn').addEventListener('click',function(){
-    document.querySelector('label.myBtn').style.borderColor='#00e0d0';
-    document.querySelector('label.myBtn').style.color='#00e0d0';
-    var inputRadio=document.querySelectorAll('input[name="category"]');
-    for(let i=0;i<inputRadio.length;++i){
-        inputRadio[i].checked=false;
-    }
-})
 var addImgToDom=document.querySelector('#addImgBtn');
 addImgToDom.addEventListener('click',handleFiles);
  function handleFiles(){
@@ -638,19 +631,26 @@ addImgToDom.addEventListener('click',handleFiles);
     var category='all';
     var inputRadio=document.querySelectorAll('input[name="category"]');
     for(let i=0;i<inputRadio.length;++i){
-        if(inputRadio[i].checked==true)category=inputRadio[i].value;
+        if(inputRadio[i].checked==true){category=inputRadio[i].value; 
+      }
     }
    
     if(curFile.length===0){return}
     else{
         for(let i=0;i<curFile.length;++i){
             var $content = $('<img class="element-item '+category+'" data-category="'+category+'" src="'+window.URL.createObjectURL(curFile[i])+'" alt="'+curFile[i].name+'" >');
-            $grid.append( $content ).isotope( 'appended', $content );
+            $grid.imagesLoaded().append( $content ).isotope( 'appended', $content );
         }
     }
     $grid.imagesLoaded().progress( function() {
   $grid.isotope('layout');
 });
+document.querySelector('label.myBtn').style.borderColor='#00e0d0';
+    document.querySelector('label.myBtn').style.color='#00e0d0';
+    var inputRadio=document.querySelectorAll('input[name="category"]');
+    for(let i=0;i<inputRadio.length;++i){
+        inputRadio[i].checked=false;
+    }
  }
 </script>
 </body>
